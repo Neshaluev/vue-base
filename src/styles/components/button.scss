@@ -1,0 +1,56 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 45px;
+  background-color: var(--background-button-default);
+  color: var(--color-button);
+  &:active {
+    background-color: lighten(rgb(70, 70, 70), 20%);
+  }
+}
+.btn-icon-share {
+}
+
+.btn-shape {
+  border-radius: 50%;
+}
+
+.btn-size-big {
+  margin: 30px;
+  font-size: 24px;
+}
+.btn-size-small {
+  margin: 5px;
+  font-size: 11px;
+}
+
+.btn-color-primary {
+  background-color: var(--background-button-primary);
+  &:active {
+  }
+}
+.btn-color-success {
+  background-color: var(--background-button-success);
+}
+.btn-color-error {
+  background-color: var(--background-button-error);
+}
+.btn-full {
+  width: 100%;
+}
+button[disabled] {
+  background-color: black;
+  color: gray;
+  &:active {
+    background-color: black;
+    color: gray;
+  }
+}

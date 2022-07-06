@@ -1,0 +1,35 @@
+.tab {
+  width: 100%;
+  // background-color: #fff;
+}
+
+.tab-navbar {
+  width: 100%;
+  display: inline-flex;
+}
+
+.tab-item {
+  width: 100%;
+  padding: 10px;
+  // margin: 10px 1px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  // background-color: var(--tab-nav-background);
+  color: var(--tab-color);
+}
+
+.tab-item-active {
+  // background-color: rgb(214, 214, 214);
+  background-color: var(--tab-nav-background);
+  // background-color: #2c3e50;
+  color: var(--tab-nav-color-active);
+}
+
+.tab-panel-item-active {
+  display: block;
+}
+.tab-panel-item {
+  display: none;
+}

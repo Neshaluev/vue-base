@@ -1,0 +1,30 @@
+.navbar {
+  width: 100%;
+  background-color: var(--nav-background);
+  display: inline-flex;
+  //   justify-content: c;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+.navbar-menu-item {
+  margin-left: 7px;
+}
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: var(--nav-text);
+
+    &.router-link-exact-active {
+      color: var(--nav-text-active);
+    }
+  }
+}
+.navbar-switch {
+  margin-right: 20px;
+}

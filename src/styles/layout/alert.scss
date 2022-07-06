@@ -1,0 +1,22 @@
+.alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  padding: 20px;
+}
+.alert-type-default {
+  background-color: var(--background-alert-default);
+}
+.alert-type-primary {
+  background-color: var(--background-alert-primary);
+  color: white;
+}
+.alert-type-success {
+  background-color: var(--background-alert-success);
+  color: white;
+}
+.alert-type-error {
+  background-color: var(--background-alert-error);
+  color: white;
+}

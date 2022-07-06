@@ -1,0 +1,59 @@
+@use "./palette.scss";
+
+@import "./components";
+@import "./layout";
+
+:root {
+  @media (prefers-color-scheme: light) {
+    @include palette.light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @include palette.dark;
+  }
+
+  &[data-theme="light"] {
+    @include palette.light;
+  }
+
+  &[data-theme="dark"] {
+    @include palette.dark;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  // text-decoration: underline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#L4 {
+  width: 60px;
+  height: 16px;
+}
+
+#L9 {
+  width: 100%;
+  height: 100%;
+  path {
+    width: 10;
+    height: 10;
+  }
+}
+// .L9 {
+//   width: 60px;
+//   height: 60px;
+// }
